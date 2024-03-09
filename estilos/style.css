@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #363636;
+    color: white;
+    font-size: 24px;
+    font-family: 'open sans', sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "header header header header header header header"
+    "nav main main main main main main";
+    
+
+}
+
+#mensaje{
+    color:white;
+  }
+
+
+header {
+    background: linear-gradient(90deg, rgba(83,91,255,1) 21%, rgba(48,133,252,1) 48%, rgba(15,197,252,1) 100%);
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    grid-area: header;
+    height: 80px;
+    position: relative;
+
+}
+
+h1 {
+    width: 80%;
+    font-size: 36px;
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+    padding:20px;
+}
+
+header a:nth-child(1){
+    position: absolute;
+    right: 20%;
+}
+
+header a:nth-of-type(2){
+    position: absolute;
+    left: 90%;
+}
+
+li {
+    list-style-type: none;
+    width: 100%;
+}
+
+nav {
+    justify-content: space-between;
+    grid-area: nav;
+    width: 160px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    background-color:#231F20 ;
+    height: 100vh;
+    padding-top: 20px;
+    width: 100%;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    padding:15px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+}
+
+li a:hover {
+    background: linear-gradient(90deg, rgba(83,91,255,1) 21%, rgba(48,133,252,1) 48%, rgba(15,197,252,1) 100%);
+    border-radius: 0 20px 20px 0;
+
+}
+
+main {
+    padding: 40px;
+    grid-area:main;
+}
+
+.autoresMain {
+    position: relative;
+    right: 8%;
+}
+
+.insertarLibro {
+    margin-top: 50px;
+}
+
+.añadirAutor {
+    display: flex;
+    align-items: center;
+}
+
+.añadirAutor button {
+    background: linear-gradient(90deg, rgba(83,91,255,1) 21%, rgba(48,133,252,1) 48%, rgba(15,197,252,1) 100%);
+    color: white;
+    font-size: 28px;
+    border-radius: 50%;
+    width: 31px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+
+}
+
+.boton {
+    background: linear-gradient(90deg, rgba(83,91,255,1) 21%, rgba(48,133,252,1) 48%, rgba(15,197,252,1) 100%);
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    width: 20%;
+    margin-top: 40px;
+}
+
+form {
+    margin-top: 30px;
+}
+
+input {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    width: 20%;
+}
+
+select {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    width: 20%;
+}
+
+label {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+}
+
+
+table {
+    margin-top: 50px;
+    width: 100%;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 16px;
+}
+
+
+
+table td,
+th {
+    padding: 8px;
+    text-align: center;
+    border: 1px;
+    border-radius: 5px;
+}
+
+table tr:nth-child(n + 2) {
+    background-color: #231F20;
+}
+
+.title {
+    margin-bottom: 50px;
+}
